@@ -16,11 +16,7 @@ public class Main {
             e.printStackTrace();
         }
 
-        for(Veicolo veicolo : veicoli){
-            System.out.println(veicolo);
-        }
-
-        /*Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Inserisci il valore di soglia: ");
         float soglia = scanner.nextFloat();
 
@@ -34,6 +30,6 @@ public class Main {
             }
             System.out.println("Veicolo: " + veicolo.getId() + " - " + checkSoglia + "\n");
             System.out.println("Timestamp: " + timestampList + "\n\n");
-        }*/
+        }
     }
 }

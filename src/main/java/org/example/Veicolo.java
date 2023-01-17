@@ -1,24 +1,26 @@
 package org.example;
 
+import java.util.ArrayList;
+
 public class Veicolo {
     private String id;
 
-    private Misura[] misure;
+    private ArrayList<Misura> misure;
 
     public Veicolo(String id) {
         this.id = id;
-        misure = new Misura[2];
+        misure = new ArrayList<Misura>();
     }
 
     public void setMisura(Misura misura, int index) {
-        this.misure[index] = misura;
+        misure.add(index, misura);
     }
 
     public Misura getMisura(int index) {
-        return misure[index];
+        return misure.get(index);
     }
 
-    public Misura[] getMisure() {
+    public ArrayList<Misura> getMisure() {
         return misure;
     }
 
@@ -26,7 +28,11 @@ public class Veicolo {
         return id;
     }
 
+    @Override
     public String toString() {
-        return "Veicolo: " + id + " - " + misure[0] + " - " + misure[1];
+        return "Veicolo{" +
+                "id='" + id + '\'' +
+                ", misure=" + misure +
+                '}';
     }
 }
