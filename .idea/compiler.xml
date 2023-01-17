@@ -9,5 +9,8 @@
         <module name="xmlEs34" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="xmlEs33" target="18" />
+    </bytecodeTargetLevel>
   </component>
 </project>
